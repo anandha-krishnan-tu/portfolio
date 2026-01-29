@@ -37,7 +37,7 @@ This portfolio is designed to:
   - npm / yarn / pnpm
 
 - Installation
-  - git clone https://github.com/your-username/your-repo-name.git
+  - git clone https://github.com/anandha-krishnan-tu/portfolio.git
   - cd your-repo-name
   - npm install
 
