@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const SkillsContainer = styled.div`
+export const ContactContainer = styled.div`
     width:100dvw;
     height:100dvw;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    background-color:violet;
+    background-color:blue;
     color:white;    
 `
