@@ -23,12 +23,12 @@ This portfolio is designed to:
 
 ## 🧠 Key Features
 
-⚡ Lightning-fast performance via Vite
-🎨 Interactive 3D visuals powered by Three.js
-📱 Fully responsive design
-🧩 Component-driven architecture
-🧼 Clean, maintainable TypeScript code
-🌐 SEO-friendly & accessible
+- ⚡ Lightning-fast performance via Vite
+- 🎨 Interactive 3D visuals powered by Three.js
+- 📱 Fully responsive design
+- 🧩 Component-driven architecture
+- 🧼 Clean, maintainable TypeScript code
+- 🌐 SEO-friendly & accessible
 
 ## 🚀 Getting Started
 
@@ -51,7 +51,7 @@ This portfolio is designed to:
 
 🔗 Portfolio Website: Coming soon
 
-##📬 Contact
+## 📬 Contact
 
 If you’d like to collaborate or discuss opportunities:
   - Email: anandhakrishnan.tu.official@gmail.com
