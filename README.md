@@ -1,9 +1,11 @@
-🚀 Personal Portfolio
+##🚀 Personal Portfolio\
+
 A modern, job-focused personal portfolio built with React, TypeScript, and Vite, enhanced with Three.js for immersive and interactive 3D experiences.
 This project showcases my skills, projects, and engineering approach through clean design and performant visuals.
 
 
-🎯 Purpose
+##🎯 Purpose
+
 This portfolio is designed to:
 
 - Present my technical skill set clearly
@@ -11,14 +13,16 @@ This portfolio is designed to:
 - Highlight creative frontend engineering using Three.js
 - Provide recruiters with a fast, intuitive overview of my work
 
-🛠 Tech Stack
+##🛠 Tech Stack
+
 - Frontend: React + TypeScript
 - Bundler: Vite
 - 3D & Animations: Three.js
 - Styling: CSS and Styled Components
 - Deployment: GitHub Pages
 
-🧠 Key Features
+##🧠 Key Features
+
 ⚡ Lightning-fast performance via Vite
 🎨 Interactive 3D visuals powered by Three.js
 📱 Fully responsive design
@@ -26,7 +30,8 @@ This portfolio is designed to:
 🧼 Clean, maintainable TypeScript code
 🌐 SEO-friendly & accessible
 
-🚀 Getting Started
+##🚀 Getting Started
+
 - Prerequisites
   - Node.js (v18+ recommended)
   - npm / yarn / pnpm
@@ -42,15 +47,18 @@ This portfolio is designed to:
 - Production Build
   - npm run build
 
-🌍 Live Demo
+##🌍 Live Demo
+
 🔗 Portfolio Website: Coming soon
 
-📬 Contact
+##📬 Contact
+
 If you’d like to collaborate or discuss opportunities:
   - Email: anandhakrishnan.tu.official@gmail.com
   - LinkedIn: https://www.linkedin.com/in/anandhakrishnan-t-u-bb3720251/
   - GitHub: https://github.com/anandha-krishnan-tu/
 
-📄 License
+##📄 License
+
 This project is licensed under the MIT License.
 Feel free to explore the code, but please do not copy the portfolio design directly.
