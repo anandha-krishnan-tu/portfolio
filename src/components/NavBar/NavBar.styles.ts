@@ -5,16 +5,18 @@ export const NavBarContainer = styled.div`
     left:0;
     top:0;
     width:100vw;
-    height:5vh;
-    background-color:#00000020;
+    height:8vh;
+    background-color:#00000050;
     color:white;
     display:flex;
     justify-content:end;
+    z-index:9999;
+    backdrop-filter: blur(8px);
 `
 
 export const NavBarList = styled.ul`
     height:100%;
-    width:50%;
+    width:60%;
     margin:0;
     display:flex;
     align-items:center;

@@ -1,0 +1,56 @@
+@font-face{
+    font-family: "Psilograph";
+    src: url("../assets/fonts/Psilograph/Psilograph-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Psilograph";
+    src: url("../assets/fonts/Psilograph/Psilograph-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Psilograph";
+    src: url("../assets/fonts/Psilograph/Psilograph-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Psilograph";
+    src: url("../assets/fonts/Psilograph/Psilograph-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Psilograph";
+    src: url("../assets/fonts/Psilograph/Psilograph-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.page-container{
+    width: 100dvw;
+    height: 100dvh;
+}
+
+body{
+    overflow-x: hidden;
+    
+}
