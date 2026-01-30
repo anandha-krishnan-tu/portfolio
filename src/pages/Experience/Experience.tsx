@@ -2,7 +2,7 @@ import { ExperienceContainer } from "./Experience.styles";
 
 function Experience() {
     return (
-        <ExperienceContainer>
+        <ExperienceContainer id="experience" className="experience-section page-container">
             <h1>Experience Page</h1>
         </ExperienceContainer>
     );

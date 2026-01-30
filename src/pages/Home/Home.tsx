@@ -2,8 +2,7 @@ import { HomeContainer } from "./Home.styles";
 
 function Home(){
     return(
-        <HomeContainer>
-            <h1>Welcome to My Portfolio</h1>
+        <HomeContainer id="home" className="home-section page-container">
             <p>This is a brief introduction about myself.</p>
         </HomeContainer>
     )
