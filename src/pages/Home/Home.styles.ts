@@ -5,6 +5,6 @@ export const HomeContainer = styled.div`
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    background-color: green;
+    background-color: #000000;
     color: white;
 `
