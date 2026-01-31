@@ -33,8 +33,9 @@ export const HomeTitle = styled.p`
 `
 
 export const HomeSubTitle = styled.p`
-    font-size:1.72vw;
+    font-size:2.1vw;
     margin-top:-6%;
+    font-family:"Bebas", Arial, sans-serif;
 `
 
 export const GlobalStyles = createGlobalStyle`

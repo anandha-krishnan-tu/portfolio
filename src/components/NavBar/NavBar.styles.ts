@@ -6,21 +6,24 @@ export const NavBarContainer = styled.div`
     top:0;
     width:100vw;
     height:8vh;
-    background-color:#00000050;
     color:white;
     display:flex;
-    justify-content:end;
+    justify-content:center;
+    align-items:end;
     z-index:9999;
-    backdrop-filter: blur(8px);
 `
 
 export const NavBarList = styled.ul`
-    height:100%;
+    height:80%;
     width:60%;
     margin:0;
     display:flex;
     align-items:center;
     justify-content:space-evenly;
+    backdrop-filter: blur(10px);
+    background-color: rgba(18, 18, 18, 0.2);
+    border-radius: 50px;
+    border: solid 1px white;
 `
 
 export const NavBarItem = styled.li`
