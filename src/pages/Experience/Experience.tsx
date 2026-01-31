@@ -1,9 +1,12 @@
-import { ExperienceContainer } from "./Experience.styles";
+import { ExperienceContainer, ExperienceBox, ExperienceTitle } from "./Experience.styles";
 
 function Experience() {
     return (
         <ExperienceContainer id="experience" className="experience-section page-container">
-            <h1>Experience Page</h1>
+            <ExperienceTitle>Experience</ExperienceTitle>
+            <ExperienceBox>
+                Experience Works
+            </ExperienceBox>
         </ExperienceContainer>
     );
 }
