@@ -1,4 +1,4 @@
-import { HomeContainer, HomeTitle, HomeSubTitle, GlobalStyles } from "./Home.styles";
+import { HomeContainer, HomeTitle, HomeSubTitle, GlobalStyles, ButtonElement, ButtonContainer } from "./Home.styles";
 import FOG from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
 import { useEffect, useRef } from "react";
@@ -38,12 +38,28 @@ function Home() {
         };
     }, []);
 
+    // Scroll into view
+    
+    function ScrollIntoSection(id: string) {
+        const ele = document.getElementById(id);
+        if(ele){
+            ele.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            })
+        }
+    }
+
     return (
         <>
             <GlobalStyles />
             <HomeContainer id="home" className="home-section page-container" ref={vantaRef}>
                 <HomeTitle>Anandhakrishnan T U</HomeTitle>
                 <HomeSubTitle>UI/UX Designer | Frontend Developer | UI/UX Developer | Problem Solver | Tech Enthusiast</HomeSubTitle>
+                <ButtonContainer>
+                    <ButtonElement onClick={() => ScrollIntoSection("contact")}>Contact Me</ButtonElement>
+                    <ButtonElement>Chat with nexo</ButtonElement>
+                </ButtonContainer>
             </HomeContainer>
         </>
     )

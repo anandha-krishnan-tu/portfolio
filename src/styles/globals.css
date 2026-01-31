@@ -100,4 +100,9 @@
 
 body{
     overflow-x: hidden;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+html{
+    scrollbar-width: none;
 }
