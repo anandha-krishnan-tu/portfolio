@@ -1,17 +1,11 @@
 import { AboutContainer, LeftSection, RightSection, AboutTitle, AboutParagraph, ButttonContainer, ButtonElement, TextContainer, TextBox } from "./About.styles";
 import ThreeDCanvas from "../../components/ThreeD/ThreeDCanvas";
-import { useInView } from "react-intersection-observer";
 
 function About() {
-    const { ref, inView } = useInView({
-        threshold: 0.3,
-        triggerOnce: true,
-    });
-
     return (
         <AboutContainer id="about" className="about-section page-container">
-            <LeftSection className="left-section" ref={ref}>
-                {inView && <ThreeDCanvas />}
+            <LeftSection className="left-section">
+                <ThreeDCanvas />
             </LeftSection>
             <RightSection className="right-section">
                 <AboutTitle className="about-title">About Me</AboutTitle>

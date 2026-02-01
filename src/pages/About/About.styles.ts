@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
     display:flex;
     align-items:center;
     justify-content:space-around;
-    background: radial-gradient(circle at center, #01081c, #000000);
+    background: linear-gradient(to right, #0a1a46ff, #000000);
     color:white;    
 `
 

@@ -3,6 +3,8 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useGLTF, Center } from "@react-three/drei";
 import * as THREE from "three";
 
+useGLTF.preload("/models/laptop.glb");
+
 function ThreeD() {
   const ref = useRef<THREE.Group>(null);
   const [hovered, setHovered] = useState(false);
