@@ -7,25 +7,21 @@ import Skills from './pages/Skills/Skills'
 import Education from './pages/Education/Education'
 import Contact from './pages/Contact/Contact'
 import Footer from './components/Footer/Footer'
-
-import { Suspense } from 'react'
-import GlobalLoader from './components/Loader/GlobalLoader'
+import Experiments from './pages/Experiments/Experiments'
 
 function App() {
   return (
     <>
-      {/* Global loader tied to Three.js loading */}
-      <Suspense fallback={<GlobalLoader />}>
-        <NavBar />
-        <Home />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Education />
-        <Contact />
-        <Footer />
-      </Suspense>
+      <NavBar />
+      <Home />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Experiments />
+      <Education />
+      <Contact />
+      <Footer />
     </>
   )
 }
