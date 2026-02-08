@@ -3,10 +3,7 @@ import { ExperienceContainer, ExperienceBox, ExperienceTitle } from "./Experienc
 function Experience() {
     return (
         <ExperienceContainer id="experience" className="experience-section page-container">
-            <ExperienceTitle>Experience</ExperienceTitle>
-            <ExperienceBox>
-                Experience Works
-            </ExperienceBox>
+            Experience Section
         </ExperienceContainer>
     );
 }

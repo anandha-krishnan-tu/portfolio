@@ -1,77 +1,118 @@
 import styled, { createGlobalStyle, keyframes } from 'styled-components';
+import colors from '../../styles/theme/colors';
 
 export const HomeContainer = styled.div`
     position: relative;
+    background-color: ${colors.mainBackground};
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-direction:column;
-    background-color: #121212;
-    color: white;
+    overflow:hidden;
+    height:100vh;
 `
 
-const floatingAnimation = keyframes`
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+export const HeadContainer = styled.div`
+    width:80%;
+    z-index:9;
 `
 
-export const HomeTitle = styled.p`
-    font-family: "Psilograph", Arial, sans-serif;
-    font-weight:900;
-    font-size: 18vw;
-    color: #ffffff;
-    padding-bottom:0;
-
-    animation: ${floatingAnimation} 3s ease-in-out infinite;
+export const MainHead = styled.p`
+    width:100%;
+    font-family:"Psilograph";
+    text-align:center;
+    font-size:30vw;
+    color:${colors.primaryText};
+    -webkit-text-stroke: 2px ${colors.mainBackground};
 `
-
-export const HomeSubTitle = styled.p`
-    font-size:2.1vw;
-    margin-top:-6%;
-    font-family:"Bebas", Arial, sans-serif;
-    color: #ffffff;
+export const SubHead = styled.p`
+    width:100%;
+    font-family:"Bebas";
+    text-align:center;
+    font-size:1.36vw;
+    margin-top:-15%;
 `
-
 export const ButtonContainer = styled.div`
-    position: absolute;
-    bottom:0;
-    left:0;
-    width:100dvw;
-    height: 15%;
+    margin-top:4%;
+    height:7vh;
     display:flex;
-    justify-content:space-between;
-    padding: 1% 2%;
+    align-items:center;
+    justify-content:center;
+    gap:10%;
 `
 
-export const ButtonElement = styled.button`
+export const Button = styled.button`
     height:100%;
-    aspect-ratio:1;
-    border-radius:50%;
-    outline:none;
-    border: dotted 4px white;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    color:white;
-    font-size:1vw;
-    font-family: "Bebas", Arial, sans-serif;
-
-    animation: ${floatingAnimation} 4s ease-in-out infinite;
-
-    &:hover{
-        cursor:pointer;
-        background-color: white;
-        color: black;
-        transition: all 0.3s ease-in-out;
-    }
+    min-width:20%;
+    border-radius:20px;
+    font-family:"Bebas";
 `
+
+const SquareRotate = keyframes`
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+`;
+
+const CircleEnlarge = keyframes`
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+`;
 
 export const GlobalStyles = createGlobalStyle`
+    .btn{
+        border: solid 2px ${colors.accent};
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:6%;
+        font-size:1.4vw;
+        background-color:${colors.accent};
+        color:${colors.mainBackground};
+        font-weight:400;
+        box-shadow:4px 4px 4px ${colors.shadow};
+    }
+
+    .secondary-btn{
+        background-color:${colors.mainBackground};
+        color:${colors.accent};
+
+        &:hover{
+            background-color:${colors.accent};
+            color:${colors.mainBackground};
+        }
+    }
+
+    .home-bg-square-wrapper {
+        position: absolute;
+        left: -20%;
+        width: 40%;
+        aspect-ratio: 1;
+        will-change: transform;
+    }
+
+    .home-bg-square {
+        width: 100%;
+        height: 100%;
+        background-color: ${colors.divider};
+        animation: ${SquareRotate} 90s linear infinite;
+        border-radius:50px;
+    }
+
+    .home-bg-circle-wrapper {
+        position: absolute;
+        right: -20%;
+        bottom: -20%;
+        width: 50%;
+        aspect-ratio: 1;
+        will-change: transform;
+    }
+
+    .home-bg-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: ${colors.accent};
+        animation: ${CircleEnlarge} 10s ease-in-out infinite;
+    }
     
 `

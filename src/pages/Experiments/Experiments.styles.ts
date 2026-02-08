@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CaseStudyContainer = styled.div`
+export const ExperimentsContainer = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;

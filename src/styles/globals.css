@@ -90,7 +90,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .page-container{
@@ -101,6 +101,7 @@
 body{
     overflow-x: hidden;
     font-family: "Roboto", Arial, sans-serif;
+    color: #334155;
 }
 
 html{

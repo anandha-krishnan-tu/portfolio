@@ -6,5 +6,6 @@ export const ContactContainer = styled.div`
     align-items:center;
     flex-direction:column;
     background-color:blue;
-    color:white;    
+    color:white;
+    height:95dvh;  
 `
