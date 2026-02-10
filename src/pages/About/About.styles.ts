@@ -1,77 +1,25 @@
-import styled from "styled-components";
+import styled, {createGlobalStyle} from "styled-components";
+import colors from "../../styles/theme/colors";
  
 
 export const AboutContainer = styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    background: linear-gradient(to right, #0a1a46ff, #000000);
-    color:white;    
-`
-
-export const LeftSection = styled.div`
-    height:75%;
-    width:35%;
-    overflow:hidden;
+    background-color:${colors.mainBackground};
     position:relative;
-    cursor: grab;
+    overflow:hidden;
 `
 
-export const RightSection = styled.div`
-    height:75%;
-    width:60%;
-    padding-right:5%;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+export const ImageContainer = styled.img`
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:34dvw;
 `
 
-export const AboutTitle = styled.p`
-    font-weight:900;
-    font-size: 3dvw;
-    margin-bottom:20px;
-`
-
-export const TextContainer = styled.div`
-    height:70%;
-    display:flex;
-    gap:20px
-`
-
-export const TextBox = styled.div`
-    height:100%;
-    flex:auto;
-    border: solid 1px white;
-    padding:20px;
-    border-radius:10px;
-    background-color: rgba(36, 69, 108, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.28);
-    cursor:pointer;
-`
-
-export const AboutParagraph = styled.p`
-    font-size: 1.2dvw;
-    line-height: 1.6;
-    text-align: left;
-`
-
-export const ButttonContainer = styled.div`
-    height: 10%;
-    width:100%;
-    display:flex;
-    gap:20px;
-    justify-content:space-around;
-`
-
-export const ButtonElement = styled.button`
-    width:50%;
-    background-color: rgba(36, 69, 108, 0.1);
-    backdrop-filter: blur(10px);
-    border: solid 1px white;
-    color:white;
-    border-radius: 10px;
-    font-size:1.2vw;
-    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.28);
-    cursor:pointer;
+export const GlobalStyles = createGlobalStyle`
+    .about-bg-star{
+        width:100px;
+        height:100px;
+        background:gold;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%. 39% 35%);
+    }
 `
