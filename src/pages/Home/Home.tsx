@@ -28,7 +28,7 @@ function Home() {
 
             gsap.timeline({
                 scrollTrigger: {
-                    trigger: ".page-container",
+                    trigger: ".home-container",
                     start: "top top",
                     end: "bottom top",
                     scrub: true
@@ -45,7 +45,7 @@ function Home() {
     return (
         <>
             <GlobalStyles />
-            <HomeContainer className="page-container" id="home">
+            <HomeContainer className="page-container home-container" id="home">
                 <HeadContainer>
                     <MainHead>Anandhakrishnan T U</MainHead>
                     <SubHead>UI/UX Developer who designs with empathy and builds with performance in mind. | I don’t just create interfaces — I solve user problems through design + code</SubHead>

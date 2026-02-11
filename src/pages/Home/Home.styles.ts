@@ -85,7 +85,7 @@ export const GlobalStyles = createGlobalStyle`
     .home-bg-square-wrapper {
         position: absolute;
         left: -20%;
-        width: 40%;
+        width: 40%; 
         aspect-ratio: 1;
         will-change: transform;
     }
