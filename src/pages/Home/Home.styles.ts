@@ -8,7 +8,6 @@ export const HomeContainer = styled.div`
     align-items:center;
     justify-content:center;
     overflow:hidden;
-    height:100vh;
 `
 
 export const HeadContainer = styled.div`

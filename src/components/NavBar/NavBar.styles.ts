@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../../styles/theme/colors";
 
 export const NavBarContainer = styled.div`
-    position:fixed;
+    position:fixed !important;
     left:0;
     top:0;
     width:100vw;
