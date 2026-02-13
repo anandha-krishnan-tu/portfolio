@@ -10,39 +10,43 @@ import Experiments from './pages/Experiments/Experiments'
 import CaseStudy from './pages/CaseStudy/CaseStudy'
 import HomeLayout from './layouts/HomeLayout'
 import CaseStudyLayout from './layouts/CaseStudyLayout'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
+    <>
+      <ScrollToTop />
       <Routes>
 
-      {/* Home with NavBar + Footer */}
-      <Route element={<HomeLayout />}>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-              <About />
-              <Projects />
-              <Skills />
-              <Experience />
-              <Experiments />
-              <Education />
-              <Contact />
-            </>
-          }
-        />
-      </Route>
+        {/* Home with NavBar + Footer */}
+        <Route element={<HomeLayout />}>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <About />
+                <Projects />
+                <Skills />
+                <Experience />
+                <Experiments />
+                <Education />
+                <Contact />
+              </>
+            }
+          />
+        </Route>
 
-      {/* CaseStudy with Footer only */}
-      <Route element={<CaseStudyLayout />}>
-        <Route
-          path="/case-study/:projectId"
-          element={<CaseStudy />}
-        />
-      </Route>
+        {/* CaseStudy with Footer only */}
+        <Route element={<CaseStudyLayout />}>
+          <Route
+            path="/case-study/:projectId"
+            element={<CaseStudy />}
+          />
+        </Route>
 
-    </Routes>
+      </Routes>
+    </>
   );
 }
 

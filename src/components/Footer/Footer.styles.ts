@@ -10,6 +10,6 @@ export const FooterContainer = styled.div`
     align-items:center;
     justify-content:center;
     font-family:"Bebas";
-    font-size:1.2vw;
+    font-size:1vw;
     font-weight:400;
 `

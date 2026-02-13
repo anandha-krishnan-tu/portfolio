@@ -1,9 +1,13 @@
 import { FooterContainer } from "./Footer.styles";
+import CopyrightIcon from '@mui/icons-material/Copyright';
 
 function Footer() {
+    
+    const year = new Date().getFullYear();
+
     return (
         <FooterContainer>
-            copyright @ Anandhakrishnan T U in 2026
+            <CopyrightIcon/> {year} Anandhakrishnan T U  | Crafting intelligent & meaningful digital experiences.
         </FooterContainer>
     );
 }
