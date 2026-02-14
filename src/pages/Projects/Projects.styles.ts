@@ -42,7 +42,7 @@ export const ProjectBgRectangleOne = styled.div`
 export const ProjectBgRectangleTwo = styled.div`
     width: 130dvw;
     height: 25dvh;
-    background-color: ${colors.divider};
+    background-color: ${colors.softBg};
     position: absolute;
     top: 10%;
     left: -23%;

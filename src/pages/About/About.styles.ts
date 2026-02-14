@@ -57,7 +57,8 @@ export const GlobalStyles = createGlobalStyle`
     .about-bg-star-wrapper{
         height:85vh;
         aspect-ratio:1;
-        will-change: transform;position: absolute;
+        will-change: transform;
+        position: absolute;
         right: -22%;
         bottom:2%;
         z-index: 1;

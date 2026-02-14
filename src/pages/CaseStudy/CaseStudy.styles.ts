@@ -68,7 +68,7 @@ export const ProjectImage = styled.img`
 `
 
 export const ProjectVideo = styled.video`
-    background-color:red;
+    background-color:${colors.softBg};
     width:100%;
     aspect-ratio:2/1.4;
     object-fit:cover;
