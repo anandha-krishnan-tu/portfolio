@@ -3,6 +3,9 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef, useLayoutEffect } from "react";
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
+import PhonelinkIcon from '@mui/icons-material/Phonelink';
+import InterestsIcon from '@mui/icons-material/Interests';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,6 +60,7 @@ function Skills() {
                                 <li className="databox-li">Responsive & Adaptive Layout Systems</li>
                                 <li className="databox-li">UI Performance Optimization</li>
                             </ul>
+                            <PhonelinkIcon className="box-bg-icon"/>
                         </DataBoxes>
                         <DataBoxes>
                             <SubHead>Design & Development Toolkit</SubHead>
@@ -68,6 +72,7 @@ function Skills() {
                                 <li className="databox-li">GitHub</li>
                                 <li className="databox-li">Chrome DevTools</li>
                             </ul>
+                            <InterestsIcon className="box-bg-icon"/>
                         </DataBoxes>
                         <DataBoxes>
                             <SubHead>Professional Strengths</SubHead>
@@ -78,6 +83,7 @@ function Skills() {
                                 <li className="databox-li">Component Reusability Strategy</li>
                                 <li className="databox-li">Accessibility Awareness</li>
                             </ul>
+                            <PsychologyIcon className="box-bg-icon"/>
                         </DataBoxes>
                     </DataContainerTop>
                     <DataContainerBottom>

@@ -53,14 +53,21 @@ export const DataContainerBottom = styled.div`
 `
 
 export const DataBoxes = styled.div`
-    height:100%;
-    flex:1;
-    background-color:${colors.softBg};
-    border:solid 3px ${colors.accent};
-    border-radius:20px;
-    box-shadow:5px 5px 10px rgba(0,0,0,0.3); 
-    position:relative;
-`
+    height: 100%;
+    flex: 1;
+    background-color: ${colors.softBg};
+    border: solid 3px ${colors.accent};
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;   /* Important */
+
+    > *:not(.box-bg-icon) {
+        position: relative;
+        z-index: 1;
+    }
+
+`;
 
 const HexagonRotate = keyframes`
     0%{transform: rotate(0deg)}
@@ -222,11 +229,14 @@ export const GlobalStyles = createGlobalStyle`
         animation: ${HexagonMove} 10s linear infinite;
     }
 
-    .box-bg-icon{
-        position:absolute;
-        top:0;
-        left:0;
-        font-size:40px;
+    .box-bg-icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 20vw !important;
+        opacity: 0.9;
+        z-index: 0;
         color:white;
+        pointer-events: none;
     }
 `
