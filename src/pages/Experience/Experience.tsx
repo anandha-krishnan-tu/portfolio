@@ -9,21 +9,21 @@ function Experience() {
                 {/* <p className="sub-title">Frontend developer focused on building scalable, high-performance, and accessible web applications with measurable business impact.</p> */}
                 <ExperienceBox>
                     <ExperienceLeft className="exp-left">
-                        <Heading className="main-head">Frontend Developer</Heading>
-                        <Heading className="sub-head">UST | Jan 2024 – Present</Heading>
-                        <ul>
-                            <li>Architected and developed scalable, reusable UI components using modern frontend technologies</li>
-                            <li>Improved overall UX consistency across multiple enterprise modules</li>
-                            <li>Reduced production UI defects by implementing structured component architecture</li>
-                            <li>Collaborated closely with designers, backend teams, and product owners</li>
-                            <li>Optimized application performance resulting in faster load times</li>
-                            <li>Ensured accessibility compliance following WCAG standards</li>
-                            <li>Contributed to design system enhancements and UI documentation</li>
-                            <li>Participated in code reviews and mentored junior developers</li>
-                        </ul>
-                    </ExperienceLeft>
-                    <ExperienceRight className="exp-right">
-                        <div className="exp-right-top">
+                        <div className="experience-left-top">
+                            <Heading className="main-head">Frontend Developer</Heading>
+                            <Heading className="sub-head">UST | Jan 2024 – Present</Heading>
+                            <ul>
+                                <li>Architected and developed scalable, reusable UI components using modern frontend technologies</li>
+                                <li>Improved overall UX consistency across multiple enterprise modules</li>
+                                <li>Reduced production UI defects by implementing structured component architecture</li>
+                                <li>Collaborated closely with designers, backend teams, and product owners</li>
+                                <li>Optimized application performance resulting in faster load times</li>
+                                <li>Ensured accessibility compliance following WCAG standards</li>
+                                <li>Contributed to design system enhancements and UI documentation</li>
+                                <li>Participated in code reviews and mentored junior developers</li>
+                            </ul>
+                        </div>
+                        <div className="experience-left-bottom">
                             <Heading className="main-head">Growth Timeline</Heading>
                             <div className="timeline-data-container">
                                 <div className="timeline-data">
@@ -54,7 +54,9 @@ function Experience() {
                                 <div className="progress-line"></div>
                             </div>
                         </div>
-                        <div className="exp-right-middle">
+                    </ExperienceLeft>
+                    <ExperienceRight className="exp-right">
+                        <div className="experience-right-top">
                             <Heading className="main-head">Expanded Responsibilities</Heading>
                             <div className="responsibilities-container">
                                 <div className="progress-bar-container">
@@ -128,6 +130,9 @@ function Experience() {
                         </div>
                     </ExperienceRight>
                 </ExperienceBox>
+
+                <div className="exp-bg-arrow arrow-one"></div>
+                <div className="exp-bg-arrow arrow-two"></div>
             </ExperienceContainer>
         </>
     );

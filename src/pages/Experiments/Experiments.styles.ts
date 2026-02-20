@@ -1,9 +1,14 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+import colors from "../../styles/theme/colors";
 
 export const ExperimentsContainer = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    background-color:blue;
+    background-color:${colors.mainBackground};
+`
+
+export const GlobalStyles = createGlobalStyle`
+
 `

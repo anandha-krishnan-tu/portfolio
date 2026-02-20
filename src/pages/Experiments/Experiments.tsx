@@ -1,10 +1,13 @@
-import { ExperimentsContainer } from "./Experiments.styles";
+import { ExperimentsContainer, GlobalStyles } from "./Experiments.styles";
 
 function Experiments() {
     return (
-        <ExperimentsContainer className="page-container" id="experiments">
-            Experiments Section
-        </ExperimentsContainer>
+        <>  
+            <GlobalStyles/>
+            <ExperimentsContainer id="experiments" className="experiments-section page-container">
+
+            </ExperimentsContainer>
+        </>
     );
 }
 
