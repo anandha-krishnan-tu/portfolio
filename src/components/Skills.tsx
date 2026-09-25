@@ -1,0 +1,3 @@
+import { skills } from "@/data/content";
+import { Reveal, SectionLabel } from "./ui/Reveal";
+export function Skills(){return <section id="skills" className="section shell"><SectionLabel number="06">SKILLS & TOOLS</SectionLabel><div className="section-heading"><Reveal><h2>Crafted with<br/>the right tools.</h2></Reveal><p>A considered toolkit for performant, scalable<br/>and delightful digital experiences.</p></div><div className="skill-grid">{skills.map((x,i)=><Reveal key={x.title} className="skill-card" delay={i*.05}><x.icon/><div><h3>{x.title}</h3><p>{x.items.join(" · ")}</p></div></Reveal>)}</div></section>}

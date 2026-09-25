@@ -1,0 +1,3 @@
+import { Award, GraduationCap } from "lucide-react";
+import { Reveal, SectionLabel } from "./ui/Reveal";
+export function Education(){return <section id="education" className="section shell"><SectionLabel number="07">EDUCATION</SectionLabel><Reveal><h2>A strong foundation.</h2></Reveal><div className="education-grid"><article><GraduationCap/><div><small>DEGREE</small><h3>Bachelor of Technology (B.Tech)</h3><h4>Computer Science & Engineering</h4><p>SNNIMT, Maliankara<br/>APJ Abdul Kalam Technological University<br/>Maliankara, Ernakulam</p><b>2019 — 2023 <i/> CGPA: 7.75</b></div></article><article><Award/><div><small>CERTIFICATION</small><h3>Python Fullstack Development</h3><h4>Udemy</h4></div></article></div></section>}
