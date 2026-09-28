@@ -150,6 +150,12 @@ h2{font-size:clamp(2.45rem,4.6vw,4.7rem);line-height:.98;letter-spacing:-.06em}
 .custom-cursor.cursor-view{width:54px;height:54px;margin:-20px;background:var(--accent);border-color:var(--accent);display:grid;place-items:center;mix-blend-mode:normal}
 .custom-cursor.cursor-view::after{content:"VIEW";font-size:9px;font-weight:800;letter-spacing:.08em;color:#09100a}
 
+/* Intentional about-copy columns keep the reading rhythm balanced at every width. */
+.body-copy{columns:unset;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px}
+.body-copy>div{display:flex;flex-direction:column}
+.body-copy p{margin-bottom:20px}
+.body-copy p:last-child{margin-bottom:0}
+
 @media(max-width:767px),(hover:none){
   .availability i{animation:none}
   .button:hover,.stat:hover,.interactive-project:hover,.timeline-item:hover article,.education-grid article:hover,.socials a:hover,.contact-list a:hover,.footer-row button:hover{transform:none;box-shadow:none}
